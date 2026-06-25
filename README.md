@@ -22,27 +22,27 @@ import sys
 
 *# コマンドライン引数から入力画像と出力画像のファイル名を取得*
 
-input\\\_image = sys.argv\\\[1]
+input_image = sys.argv[1]
 
-output\\\_image = sys.argv\\\[2]
+output_image = sys.argv[2]
 
 
 
 *# 画像の読み込み*
 
-img = Image.open(input\\\_image)
+img = Image.open(input_image)
 
 
 
 *# 画像の左右反転*
 
-img\\\_flip = img.transpose(Image.FLIP\\\_LEFT\\\_RIGHT)
+img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
 
 
 
 *# 画像の保存*
 
-img\\\_flip.save(output\\\_image)
+img_flip.save(output_image)
 
 ```
 
@@ -54,7 +54,7 @@ img\\\_flip.save(output\\\_image)
 
 ```bash
 
-python3 flip.py <input\\\_image\\\_path> <output\\\_image\\\_path>
+python3 flip.py <input_image_path> <output_image_path>
 
 ```
 
